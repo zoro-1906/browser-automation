@@ -15,10 +15,9 @@ username_field = WebDriverWait(driver, 10).until(EC.visibility_of_element_locate
 password_field = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.ID, 'password')))
 login_button = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.ID, 'login')))
 
-
-
-
-
+username_field.send_keys('yourusername')
+password_field.send_keys('yourpaswword')
+login_button.click()
 
 
 input("Press Enter to exit the browser")
