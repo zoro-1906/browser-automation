@@ -61,7 +61,7 @@ class WebAutomation:
         self.driver.execute_script("arguments[0].click();", submit_button)
 
         print("Form Submitted!")
-      time.sleep(1)
+        time.sleep(1)
 
     def download(self):
         # Locate and click the "Upload and Download" section and download button
@@ -91,7 +91,6 @@ class WebAutomation:
 
     def close(self):
         self.driver.quit()
-
 
 
 if __name__ == "__main__":
