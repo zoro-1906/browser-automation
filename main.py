@@ -24,6 +24,22 @@ username_field.send_keys('yourusername')
 password_field.send_keys('yourpassword')
 login_button.click()
 
+# Locate the Elements dropdown and Text Box
+elements = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.XPATH, '//*[@id="app"]/div/div/div/div[1]/div/div/div[1]/span/div/div[1]')))
+elements.click()
+text_box = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.ID, 'item-0')))
+text_box.click()
+
+# Locate the form fields
+fullname_field = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.ID, 'userName')))
+email_field = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.ID, 'email')))
+current_address_field = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.ID, 'currentAddress')))
+permanent_address_field = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.ID, 'permanentAddress')))
+submit_button = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.ID, 'submit')))
+
+# Fill in the form fields
+
+
 # Wait for user input to exit
 input("Press Enter to exit the browser")
 driver.quit()
