@@ -93,6 +93,7 @@ class WebAutomation:
         self.driver.quit()
 
 
+
 if __name__ == "__main__":
     webautomation = WebAutomation()
     webautomation.login('yourusername', 'yourpassword')
