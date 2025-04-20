@@ -8,7 +8,7 @@ The script automates the following tasks on the Demo QA website:
 Form Fill: Navigates to a form, fills in personal details, and submits the form.
 File Download: Navigates to a download page and initiates a file download, verifying the completion.
 
-Prerequisites:
+## Prerequisites:
 Python 3.x
 Google Chrome Browser
 Chrome WebDriver compatible with your Chrome version. The driver should be placed in the chromedriver-win64 folder and named chromedriver.exe.
